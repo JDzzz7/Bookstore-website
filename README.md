@@ -5,5 +5,5 @@ Validates every field in the form, such as username and password formatting, usi
 ## Features
 Once logged in, users can choose from a variety of different services such as checking bookseller's records, making a book purchase, returning a book purchase, updating a customer's book order, cancelling a customer's book order, and creating a new customer account. All updates and changes made with those services will be reflected in the database upon validation.
 ### Final notes
-BooksellerDB table contains login info for bookstore homepage. All database tables included as CSV files. ``bookstore.html`` is the index homepage of the website.
+``bookstore.html`` is the index homepage of the website. BooksellerDB table contains login info for bookstore homepage. All database tables included as CSV files.
 
