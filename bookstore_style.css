@@ -1,0 +1,49 @@
+body {
+    background-image: url("bookshelf.jpg");
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 300px;
+}
+
+input[type="password"] {
+    width: 300px;
+}
+
+input[type="numeric"] {
+    width: 300px;
+}
+
+form { 
+    display: table;
+    border-collapse:separate;
+    border-spacing:0 20px;
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    background-color: white;
+    background: rgba(255,255,255,0.5);
+    border-style: solid;
+    border-width: 3px;
+    border-color: blue;
+    display: inline-block;      
+}
+.ro { 
+    display: table-row;
+    border-collapse:separate;
+    border-spacing:0 15px;
+}
+
+label { 
+    display: table-cell; 
+    text-align: right;
+}
+
+input { 
+    display: table-cell;
+}
+
+.require{
+    color: green;
+}

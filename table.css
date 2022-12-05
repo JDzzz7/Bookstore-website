@@ -1,0 +1,62 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+body {
+    background-image: url("bookshelf.jpg");
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    font-size: large;
+    border: 1px solid black;
+}
+th, td {
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: 90DCFF;
+    background: rgba(144,220,255,0.6);
+}
+
+form { 
+    display: table;
+    border-collapse:separate;
+    border-spacing:0 20px;
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    background-color: D2FFFE;
+    background: rgba(210,255,254,0.5);
+    border-style: solid;
+    border-width: 3px;
+    border-color: blue;
+    display: inline-block;      
+}
+input[type="submit"] {
+    background-color: white;
+    color: black;
+}
+input[type="submit"]:hover {
+    background-color: #009186;
+    color: white;
+    transition-duration: 0.4s;
+}

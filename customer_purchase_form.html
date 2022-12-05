@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="bookstore_style.css">
+		<style>
+			ul {list-style-type: none; margin: 0; padding: 3; overflow: hidden; background-color: #330066;} 
+			li {float: left; font-weight: bold; font-size: 20; } 
+			li a {display: block; color: white; text-align: center; padding: 15px 19px; text-decoration: none;} 
+			li a:hover {background-color: #8000ff;}
+		</style>
+		<title>Form page</title>
+	</head>
+	<body>
+		<ul>
+			<li><a href="bookstore.html">Home</a></li>
+			<li><a href="bookseller_records.php">Search Bookseller's Records</a></li>
+			<li><a href="customer_purchase_form.html">Customer Purchases</a></li>
+            <li><a href="returnBook.html">Customer's Book/Order Return</a></li>
+            <li><a href="updateOrder.html">Update A Customer's Book Order</a></li>
+            <li><a href="cancelOrder.html">Cancel a Customer's Book Order</a></li>
+			<li><a href="createAccount.html">Create Customer Account</a></li>
+		</ul>
+		<form action="accountCheck.php" id="book_form" method="POST">
+			<h2>The Story Keeper Bookstore </h2>
+			<p class="ro">	
+				<label for="first" class="start"><strong>Customer's First Name:</strong></label>
+				<input type="text" name="first" id="first" placeholder="Example: John">
+				<label for="first" class="require"><strong>Required</strong></label>
+			</p>
+			<p class="ro">	
+				<label for="last" class="start"><strong>Customer's Last Name:</strong></label>
+				<input type="text" name="last" id="last" placeholder="Example: Doe">
+				<label for="last" class="require"><strong>Required</strong></label>
+			</p>
+			<p class="ro">	
+				<label for="identity" class="start"><strong>Customer's ID Number:</strong></label>
+				<input type="numeric" name="identity" id="identity" placeholder="Example: 111">
+				<label for="identity" class="require"><strong>Required</strong></label>			
+			</p>
+			<p class="ro">	
+				<label for="inStore" class="start"><strong>Customer's In Store Purchase:</strong></label>
+				<input type="text" name="inStore" id="inStore" placeholder="Example: A Tale of Two Cities">
+				<label for="inStore" class="require"><strong>Required</strong></label>
+			</p>
+			<p class="ro">	
+				<label for="online" class="start"><strong>Customer's Online Purchase:</strong></label>
+				<input type="text" name="online" id="online" placeholder="Example: Romeo and Juliet">
+				<label for="online" class="require"><strong>Required</strong></label>
+			</p>
+			<p class="ro">	
+				<label for="dateTime" class="start"><strong>Date and Time of Purchase:</strong></label>
+				<input type="text" name="dateTime" id="dateTime" placeholder="Example: Februrary 9, 2022 11:00AM">
+				<label for="dateTime" class="require"><strong>Required</strong></label>
+			</p>
+			<p class="ro">	
+				<label for="payType" class="start"><strong>Payment Type:</strong></label>
+				<input type="text" name="payType" id="payType" placeholder="Cash/Credit">
+				<label for="payType" class="require"><strong>Required</strong></label>
+			</p>
+			<p class="ro">	
+				<label for="orderType" class="start"><strong>Order Type:</strong></label>
+				<input type="text" name="orderType" id="orderType" placeholder="In Store/Online">
+				<label for="orderType" class="require"><strong>Required</strong></label>
+			</p>
+			<p class="ro">	
+				<label for="shipAddress" class="start"><strong>Shipping Address:</strong></label>
+				<input type="text" name="shipAddress" id="shipAddress" placeholder="323 MLK Blvd Newark, NJ">
+				<label for="shipAddress" class="require"><strong>Required</strong></label>
+			</p>
+			<p><input type="submit" value="Submit"></p>
+		</form>
+		<script src="check.js"></script>
+	</body>
+</html>

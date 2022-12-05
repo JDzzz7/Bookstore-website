@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="bookstore_style.css">
+		<style>
+			ul {list-style-type: none; margin: 0; padding: 3; overflow: hidden; background-color: #330066;} 
+			li {float: left; font-weight: bold; font-size: 20; } 
+			li a {display: block; color: white; text-align: center; padding: 15px 19px; text-decoration: none;} 
+			li a:hover {background-color: #8000ff;}
+		</style>
+		<title>Form page</title>
+	</head>
+	<body>
+		<ul>
+			<li><a href="bookstore.html">Home</a></li>
+			<li><a href="bookseller_records.php">Search Bookseller's Records</a></li>
+			<li><a href="customer_purchase_form.html">Customer Purchases</a></li>
+            <li><a href="returnBook.html">Customer's Book/Order Return</a></li>
+            <li><a href="updateOrder.html">Update A Customer's Book Order</a></li>
+            <li><a href="cancelOrder.html">Cancel a Customer's Book Order</a></li>
+			<li><a href="createAccount.html">Create Customer Account</a></li>
+		</ul>
+		<form id="book_form" action = "cancel.php" method="POST">
+			<h2>The Story Keeper Bookstore </h2>
+			</p>
+			<p class="ro">	
+				<label for="identity" class="start"><strong>Customer's ID Number:</strong></label>
+				<input type="numeric" name="identity" id="identity" placeholder="Example: 111">
+				<label for="identity" class="require"><strong>Required</strong></label>			
+			</p>
+            <p class="ro">	
+				<label for="purchaseID" class="start"><strong>Customer's Purchase ID:</strong></label>
+				<input type="numeric" name="purchaseID" id="purchaseID" placeholder="Example: 111">
+				<label for="purchaseID" class="require"><strong>Required</strong></label>			
+			</p>
+			<p><input type="submit" value="Submit"></p>
+		</form>
+		<script src="cancel.js"></script>
+	</body>
+</html>

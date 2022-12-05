@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="bookstore_style.css">
+		<title>Form page</title>
+	</head>
+	<body>
+		<form action ="verify.php" id="book_form" method="POST">
+			<h2>The Story Keeper Bookstore </h2>
+			<p class="ro">	
+				<label for="first" class="start"><strong>Book Merchant's First Name:</strong></label>
+				<input type="text" name="first" id="first" placeholder="Example: Tyler">
+				<label for="first" class="require"><strong>Required</strong></label>
+			</p>
+			<p class="ro">	
+				<label for="last" class="start"><strong>Book Merchant's Last Name:</strong></label>
+				<input type="text" name="last" id="last" placeholder="Example: Smith">
+				<label for="last" class="require"><strong>Required</strong></label>
+			</p>
+			<p class="ro">	
+				<label for="passw" class="start"><strong>Book Merchant's Password:</strong></label>
+				<input type="password" name="passw" id="passw" placeholder="Example: Jko17000gho">
+				<label for="passw" class="require"><strong>Required</strong></label>			
+			</p>
+			<p class="ro">	
+				<label for="identity" class="start"><strong>Book Merchant's ID#:</strong></label>
+				<input type="numeric" name="identity" id="identity" placeholder="Example: 987605">
+				<label for="identity" class="require"><strong>Required</strong></label>			
+			</p>
+			<p class="ro">	
+				<label for="phone" class="start"><strong>Book Merchant's Phone#:</strong></label>
+				<input type="text" name="phone" id="phone" placeholder="Example: 888-888-8888">
+				<label for="phone" class="require"><strong>Required</strong></label>
+			</p>
+			<p class="ro">	
+				<label for="email" class="start"><strong>Book Merchant's Email:</strong></label>
+				<input type="text" name="email" id="email" placeholder="Example: abc12@gmail.com">
+
+			</p>
+			<span>
+				<input type="checkbox" name="confirm" id="confirm">
+				<label for="confirm" class="start"><strong>Check the box for an email confirmation</strong></label>
+				<br>
+				<label for="Transaction" class="start"><strong>Select Transaction:</strong></label>		
+				<select id="Transaction" name="Transaction">
+					<option value="search">Search for a book merchant's account</option>
+					<option value="create">Create a new customer account</option>
+					<option value="update">Update a customer's book order</option>
+					<option value="cancel">Cancel a customer's book order</option>
+					<option value="purchase">Customer's book purchase</option>
+					<option value="return">Customer's book return</option>
+				</select>
+			</span>
+
+			<p><input type="submit" value="Submit"><input type="button" value="reset" onClick="resetAll()"></p>
+		</form>
+		<script src="script.js"></script>
+	</body>
+</html>
